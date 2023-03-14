@@ -1,5 +1,24 @@
 nav {
     border-bottom: 2px solid grey;
     align-items: baseline;
+    background-color: rgb(48, 0, 74)
 }
 
+body {
+    background-color: rgb(206, 187, 215);
+}
+
+.banner-image {
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.banner-logo {
+    width: 25%;
+    position: absolute;
+    display: block;
+    padding-top: 18px;
+    padding-left: 18px;
+    align-self: center;
+}
