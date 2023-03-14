@@ -32,6 +32,7 @@ header {
 .site-title:visited {
     color: rgb(206, 187, 215);
 }
+
 /* Change the color of links on hover */
 .nav-link:hover {
   background-color: rgb(97, 195, 58);
