@@ -1,5 +1,5 @@
 nav {
-    border-bottom: 2px solid grey;
+    border-bottom: 3px solid grey;
     align-items: baseline;
     background-color: rgb(48, 0, 74);
     height: auto;
@@ -15,16 +15,18 @@ nav {
   padding: 10px;
 }
 
+header {
+    text-align: center;
+    font-size: 3rem;
+    text-decoration: none;
+    color: white;
+    overflow: hidden;
+}
+
 .body-text {
     padding-left: 4rem;
     padding-top: 1rem;
     padding-bottom: 2rem;
-}
-
-.site-title {
-    text-decoration: none;
-    text-align: center;
-    background-color: red;
 }
 
 .site-title:visited {
