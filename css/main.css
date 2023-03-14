@@ -1,11 +1,61 @@
 nav {
     border-bottom: 2px solid grey;
     align-items: baseline;
-    background-color: rgb(48, 0, 74)
+    background-color: rgb(48, 0, 74);
+    height: auto;
+}
+
+.navigation li {
+  color: rgb(48, 0, 74);
+  text-align: right;
+  text-decoration: none;
+  font-size: 22px;
+  list-style: none;
+  display: inline;
+  padding: 10px;
+}
+
+.body-text {
+    padding-left: 4rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+.site-title {
+    text-decoration: none;
+    text-align: center;
+    background-color: red;
+}
+
+.site-title:visited {
+    color: rgb(206, 187, 215);
+}
+/* Change the color of links on hover */
+.nav-link:hover {
+  background-color: rgb(97, 195, 58);
+  color: white;
+  text-decoration: none;
+  border: 2px solid rgb(206, 187, 215);
+}
+
+/* Add a color to the active/current link */
+.nav-link.visited {
+  color: rgb(206, 187, 215);
+}
+
+.background-color {
+    background-color: rgb(206, 187, 215);
+    background-size: cover;
+}
+
+.main-heading {
+    font-family: 'Fredoka One';
+    font-family: 'Open Sans', sans-serif;
 }
 
 body {
-    background-color: rgb(206, 187, 215);
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Playfair Display', serif;
 }
 
 .banner-image {
@@ -14,11 +64,36 @@ body {
     object-fit: cover;
 }
 
+.cupcakes {
+    height: 375px;
+    width: 525px;
+    object-fit: cover;
+    float: right;
+    padding-left: 2rem;
+    padding-right: 4rem;
+    padding-top: 1rem;
+}
+
 .banner-logo {
     width: 25%;
     position: absolute;
-    display: block;
+    display: flex;
     padding-top: 18px;
     padding-left: 18px;
-    align-self: center;
+    align-items: center;
+}
+
+footer {
+    background-color: rgb(48, 0, 74);
+    padding: 10px;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: rgb(206, 187, 215);
+}
+
+h4 {
+    color: rgb(206, 187, 215);
+    text-decoration: none;
 }
