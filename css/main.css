@@ -46,9 +46,12 @@ header {
     color: rgb(206, 187, 215);
 }
 
-.search-icon i.fa-search {
-    display: flex;
-    font-size: 18px;
+.search-button i.fa-search {
+    color: white;
+    border-radius: none;
+    background-color: rgb(97, 195, 58);
+    font-size: 50px;
+    float: right;
 }
 
 .nav-link:hover {
