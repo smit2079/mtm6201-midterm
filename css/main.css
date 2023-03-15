@@ -5,6 +5,7 @@ nav {
     border-bottom: 3px solid grey;
     background-color: rgb(48, 0, 74);
     height: auto;
+    list-style: none;
 }
 
 .navigation-links {
@@ -16,6 +17,7 @@ nav {
 
 .navigation-links li {
     margin-right: 20px;
+    list-style: none;
 }
 
 .navigation-links li:last-child {
@@ -63,9 +65,25 @@ header {
 .background-color {
     background-color: rgb(206, 187, 215);
     background-size: cover;
+    width: 100%;
 }
 
 .main-heading {
+    font-family: 'Fredoka One';
+    font-family: 'Open Sans', sans-serif;
+}
+
+.contact-heading {
+    font-family: 'Fredoka One';
+    font-family: 'Open Sans', sans-serif;
+}
+
+.form-heading {
+    font-family: 'Fredoka One';
+    font-family: 'Open Sans', sans-serif;
+}
+
+.about-heading {
     font-family: 'Fredoka One';
     font-family: 'Open Sans', sans-serif;
 }
@@ -91,8 +109,17 @@ body {
     padding-left: 2rem;
     padding-right: 4rem;
     padding-top: 1rem;
+    animation: reveal 3s;
 }
 
+@keyframes reveal {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
 .banner-logo {
     position: absolute;
     top: 45%;
@@ -119,4 +146,13 @@ h4 {
 
 .form-label {
     padding: 10px;
+}
+
+.about-image {
+    position: relative;
+    object-fit: cover;
+    background-position: center;
+    height: 500px;
+    width: 100%;
+    border: 5px solid rgb(48, 0, 74);
 }
