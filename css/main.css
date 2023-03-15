@@ -1,20 +1,29 @@
 nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     border-bottom: 3px solid grey;
-    align-items: baseline;
     background-color: rgb(48, 0, 74);
     height: auto;
 }
 
-.navigation li {
-  color: rgb(48, 0, 74);
-  text-align: right;
-  text-decoration: none;
-  font-size: 22px;
-  list-style: none;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 10px;
-  padding-bottom: 5px;
+.navigation-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation-links li {
+    margin-right: 20px;
+}
+
+.navigation-links li:last-child {
+    margin-right: 0;
+}
+
+.navigation-links a {
+    text-decoration: none;
 }
 
 header {
@@ -35,11 +44,11 @@ header {
     color: rgb(206, 187, 215);
 }
 
-.nav-link {
-    display: grid;
-    grid-template-columns: 40px 40px;
+.search-icon i.fa-search {
+    display: flex;
+    font-size: 18px;
 }
-/* Change the color of links on hover */
+
 .nav-link:hover {
   background-color: rgb(97, 195, 58);
   color: white;
@@ -47,7 +56,6 @@ header {
   border: 2px solid rgb(206, 187, 215);
 }
 
-/* Add a color to the active/current link */
 .nav-link.visited {
   color: rgb(206, 187, 215);
 }
@@ -68,9 +76,11 @@ body {
 }
 
 .banner-image {
-    height: 350px;
-    width: 100%;
+    position: relative;
     object-fit: cover;
+    background-position: center;
+    height: 500px;
+    width: 100%;
 }
 
 .cupcakes {
@@ -84,13 +94,12 @@ body {
 }
 
 .banner-logo {
-    width: 25%;
     position: absolute;
-    display: grid;
-    justify-self: center;
-    padding-top: 18px;
-    padding-left: 18px;
-    align-items: center;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    z-index: 1;
 }
 
 footer {
@@ -106,4 +115,8 @@ footer {
 h4 {
     color: rgb(206, 187, 215);
     text-decoration: none;
+}
+
+.form-label {
+    padding: 10px;
 }
