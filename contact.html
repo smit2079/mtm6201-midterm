@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<!--Links to Google fonts used throughout the site-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
@@ -13,9 +13,11 @@
     <title>Contact</title>
 </head>
 <body>
+<!--Div with a class of background-color to establish the color of the entire webpage-->
     <div class="background-color">    
-        <header>
+        <header role="banner">
             <nav class="navigation">
+<!--Nav with class of navigation, which includes the links/list items that are used in the navigation-->
                 <a class="site-title" href="index.html">Prime Dough</a>
                 <ul>
                     <li>
@@ -27,39 +29,45 @@
                 </ul>
             </nav>
         </header>
-        <div class="contact-text">
+<!--Div with a class contact-text that includes h2's and p's which provide contact information-->
+        <div role="main" class="contact-text">
             <h2 class="contact-heading">We're always happy to hear from our customers!</h2> 
-            <p>If you have any questions or feedback, please don't hesitate to get in touch. You can reach us by phone, email, or in person at our bakery. Here's our contact information:</p>
+            <p role="contentinfo">If you have any questions or feedback, please don't hesitate to get in touch. You can reach us by phone, email, or in person at our bakery. Here's our contact information:</p>
         
-            <p><strong>Phone:</strong> (613) 782-0863</p>
-            <p><strong>Email:</strong> primedough@gmail.com</p>
-        <p><strong>Address:</strong> 82 Main Street, Ottawa Canada</p>
-
-        <h2 class="form-heading">Also choose to fill out the form below</h2>  
+            <p role="contentinfo"><strong>Phone:</strong> (613) 782-0863</p>
+            <p role="contentinfo"><strong>Email:</strong> primedough@gmail.com</p>
+        <p role="contentinfo"><strong>Address:</strong> 82 Main Street, Ottawa Canada</p>
+<!--h2 that leads user down to form-->
+        <h2 role="heading" class="form-heading">Also choose to fill out the form below</h2>  
         </div>
-       
+<!--Div with class form to establish the form being provided-->
         <div class="form">
-            <form>
+            <form role="form">
+<!--Form section for user to enter name-->
                 <fieldset>
                     <label class="form-label" for="Text">Name</label>
-                    <input class="form-field" type="text" name="Text">
+                    <input class="form-input1" type="text" name="Text">
                 </fieldset>
+<!--Form section for user to enter email-->
                 <fieldset>
                     <label class="form-label" for="Text">Email</label>
-                    <input class="form-field" type="text" name="Text">
+                    <input class="form-input1" type="text" name="Text">
                 </fieldset>
+<!--Form section for user to enter a message-->
                 <fieldset>
                     <label class="form-label" for="Textarea">Your Message</label>
                     <textarea class="form-field" name="Textarea"></textarea>
                 </fieldset>
-                <input type="submit" value="Submit">  
+<!--Form section for the user to submit the information with the submit button-->
+                <input class="form-button" type="submit" value="Submit">  
             </form>
         </div>
     </div>
-    <footer>
+<!--Footer that includes links to the contact page, socials (just refreshes page since there is not socials page), and the copyright-->
+    <footer role="contentinfo">
         <a href="contact.html" class="footer-link">Contact Us</a>
         <a href="#" class="footer-link">Socials</a>
-        <h4 class="footer-link">Copyright</h4>
+        <h4 role="heading" class="footer-link">Copyright</h4>
     </footer>
 </body>
 </html>
