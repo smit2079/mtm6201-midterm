@@ -1,21 +1,23 @@
+/*Targets the ul elements and adds a background color, bottom padding, uppercase transformation, and increase in font size*/
 ul {
     background: rgb(48, 0, 74);
     padding-bottom: 1px;
     text-transform: uppercase;
     font-size: 12px;
 }
-
+/*Targets the li elements and adds an inline-block display and aligns the text in the center of the page*/
 li {
     display: inline-block;
+    text-align: center;
 }
-
+/*Targets the a elements and displays as block, adds padding, removes text decoration, and adds a color*/
 a {
     display: block;
     padding: 10px;
     text-decoration: none;
     color: rgb(206, 187, 215);
 }
-
+/*Targets the header and aligns text in the center of the page, increases font size, removes text decoration, adds color, and hides any overflow*/
 header {
     text-align: center;
     font-size: 3rem;
@@ -23,51 +25,51 @@ header {
     color: white;
     overflow: hidden;
 }
-
+/*Targets the .body-text class and adds padding to the left, top, and bottom*/
 .body-text {
     padding-left: 4rem;
     padding-top: 1rem;
     padding-bottom: 2rem;
 }
-
+/*Targets the .site-title class and increases font size, adds color, and adds a background color to help blend in with the nav (could not figure out how to remove gap space)*/
 .site-title {
-    font-size: 30px;
-    align-items: left;
+    font-size: 3rem;
     color: white;
+    background: rgb(48, 0, 74);
 }
-
+/*Targets the .background-color class and adds a background color, establishes the size, and adjusts width and height to cover the entire page*/
 .background-color {
     background-color: rgb(206, 187, 215);
     background-size: cover;
     width: 100%;
     height: 100%;
 }
-
+/*Targets the .main-heading class and changes the font family*/
 .main-heading {
     font-family: 'Fredoka One';
     font-family: 'Open Sans', sans-serif;
 }
-
+/*Targets the .contact-heading class and changes the font family*/
 .contact-heading {
     font-family: 'Fredoka One';
     font-family: 'Open Sans', sans-serif;
 }
-
+/*Targets the .form-heading class and changes the font family*/
 .form-heading {
     font-family: 'Fredoka One';
     font-family: 'Open Sans', sans-serif;
 }
-
+/*Targets the .about-heading class and changes the font family*/
 .about-heading {
     font-family: 'Fredoka One';
     font-family: 'Open Sans', sans-serif;
 }
-
+/*Targets the body elements and changes the font family*/
 body {
     font-family: 'Open Sans', sans-serif;
     font-family: 'Playfair Display', serif;
 }
-
+/*Targets the .banner-image class and establishes the position, changes the fit to cover, centers it, and adjusts height and width*/
 .banner-image {
     position: relative;
     object-fit: cover;
@@ -75,7 +77,7 @@ body {
     height: 500px;
     width: 100%;
 }
-
+/*Targets the .cupcakes class (image in body text) and adjusts height and width, changes fit to cover, floats right, adds padding to left, right, and top, and includes a fade-in animation reveal for 3 seconds*/
 .cupcakes {
     height: 375px;
     width: 525px;
@@ -86,7 +88,7 @@ body {
     padding-top: 1rem;
     animation: reveal 3s;
 }
-
+/*Keyframes for the cupcakes fade-in animation on the home page, where the opacity changes*/
 @keyframes reveal {
     0% {
         opacity:0;
@@ -95,6 +97,7 @@ body {
         opacity: 100%;
     }
 }
+/*Targets the .banner-logo class and establishes the position, adjusts top and left positioning, adds a transform/translate property (this was discovered through extensive research after becoming frustrated with the logo not being centered on the banner, but it ruins the logo when it is not included), adjusts width, and adds a z-index (also had to be included after research)*/
 .banner-logo {
     position: absolute;
     top: 45%;
@@ -103,16 +106,17 @@ body {
     width: 60%;
     z-index: 1;
 }
-
+/*Targets the footer elements and adds a background color and padding*/
 footer {
     background-color: rgb(48, 0, 74);
     padding: 10px;
 }
-
+/*Targets the .footer-link class and removes text decoration, adds color and displays as inline-block, so all elements are in a straight line*/
 .footer-link {
     text-decoration: none;
     color: rgb(206, 187, 215);
     display: inline-block;
+    border-right: 2px solid greenyellow;
 }
 
 h4 {
@@ -136,20 +140,228 @@ h4 {
 label {
     display: block;
     font-size: 15px;
-    margin-bottom: 0.5;
+    margin-bottom: 0;
 }
 
 .form {
-    align-items: center;
-    margin: 2rem;
+    align-items: left;
+    margin: 1rem;
     display: flex;
     flex-direction: column;
+    border-radius: 3rem;
 }
 
+.form-input1 {
+    width: 25%;
+    height: auto;
+    border-radius: 5%;
+    border: 3px solid rgb(48, 0, 74);
+}
 .form-field {
     border: 3px solid rgb(48, 0, 74);
+    width: 60%;
+    height: 8rem;
+}
+
+.form-button {
+  background-color: rgb(48, 0, 74);
+  border: none;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
 }
 
 .contact-text {
     padding-left: 4rem;
+}
+
+.container {
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+@media only screen and (max-width: 600px) {
+    ul {
+        background: rgb(48, 0, 74);
+        padding-bottom: 1px;
+        text-transform: uppercase;
+        font-size: 12px;
+    }
+    
+    li {
+        display: inline-block;
+    }
+    
+    a {
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        color: rgb(206, 187, 215);
+    }
+    
+    header {
+        text-align: center;
+        font-size: 3rem;
+        text-decoration: none;
+        color: white;
+        overflow: hidden;
+    }
+    
+    .body-text {
+        padding-left: 4rem;
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+    }
+    
+    .site-title {
+        font-size: 3rem;
+        color: white;
+        background: rgb(48, 0, 74);
+    }
+    
+    .background-color {
+        background-color: red;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .main-heading {
+        font-family: 'Fredoka One';
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+    .contact-heading {
+        font-family: 'Fredoka One';
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+    .form-heading {
+        font-family: 'Fredoka One';
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+    .about-heading {
+        font-family: 'Fredoka One';
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+    body {
+        font-family: 'Open Sans', sans-serif;
+        font-family: 'Playfair Display', serif;
+    }
+    
+    .banner-image {
+        position: relative;
+        object-fit: cover;
+        background-position: center;
+        height: 500px;
+        width: 100%;
+    }
+    
+    .cupcakes {
+        height: 440px;
+        width: 440px;
+        object-fit: cover;
+        float: right;
+        padding-left: 4rem;
+        padding-right: 4rem;
+        padding-top: 1rem;
+        animation: reveal 3s;
+    }
+    
+    @keyframes reveal {
+        0% {
+            opacity:0;
+        }
+        100% {
+            opacity: 100%;
+        }
+    }
+    .banner-logo {
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        z-index: 1;
+    }
+    
+    footer {
+        background-color: rgb(48, 0, 74);
+        padding: 10px;
+    }
+    
+    .footer-link {
+        text-decoration: none;
+        color: rgb(206, 187, 215);
+        display: inline-block;
+    }
+    
+    h4 {
+        color: rgb(206, 187, 215);
+        text-decoration: none;
+    }
+    
+    .form-label {
+        padding: 10px;
+    }
+    
+    .about-image {
+        position: relative;
+        object-fit: cover;
+        background-position: center;
+        height: 500px;
+        width: 100%;
+        border: 5px solid rgb(48, 0, 74);
+    }
+    
+    label {
+        display: block;
+        font-size: 15px;
+        margin-bottom: 0;
+    }
+    
+    .form {
+        align-items: left;
+        margin: 1rem;
+        display: flex;
+        flex-direction: column;
+        border-radius: 3rem;
+    }
+    
+    .form-input1 {
+        width: 50%;
+        height: auto;
+        border-radius: 5%;
+        border: 3px solid rgb(48, 0, 74);
+    }
+    .form-field {
+        border: 3px solid rgb(48, 0, 74);
+        width: 98%;
+        height: 4rem;
+    }
+    
+    .form-button {
+      background-color: rgb(48, 0, 74);
+      border: none;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 20px;
+    } 
+    
+    .contact-text {
+        padding-left: 4rem;
+    }
+    
+    .container {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
 }
